@@ -20,11 +20,12 @@ Mock - директорія, яка містить емуляцію вхідни
 
 Дрони можуть приймати команди які змінюють стан рослини або команду на заміну рослини з поганим здоровʼям на іншу.
 
-Дуже рекомендую робити форки - це спрощує процесс перевірки та взагалі стан зробленої роботи.
+Disclaimer: Дуже рекомендую робити форки - це спрощує процесс перевірки та взагалі стан зробленої роботи.
 
-А. Реалізуйте метод Listen() у GenericListener, тобто - зчитування повідомлень із сенсорів та відправка їх у зовнішній канал out.
-B. Реалізуйте обробку повідомлень про гідрацію рослин - метод RunProcessor у HydrationProcessor
-C. Реалізуйте обробку повідомлень про кислотність ґрунту рослин - метод RunProcessor у PHProcessor
+Завдання: \
+А. Реалізуйте метод Listen() у GenericListener, тобто - зчитування повідомлень із сенсорів та відправка їх у зовнішній канал out. \
+B. Реалізуйте обробку повідомлень про гідрацію рослин - метод RunProcessor у HydrationProcessor \
+C. Реалізуйте обробку повідомлень про кислотність ґрунту рослин - метод RunProcessor у PHProcessor \
 D. Реалізуйте обробку повідомлень про стан зродовʼя рослин - метод RunProcessor у HealthProcessor
 
 *E. Якщо почуваєте у себе достатньо сил - реалізуйте вивід стану дронів - їх заряд та позицію.
@@ -55,9 +56,10 @@ Drones can accept commands that changes plant state or plant replace command if 
 
 Strong recommendation - make tasks in fork repo. With them, it would be easier to check your progress and solution.
 
-A. Your task is to implement method Listen() in GenericListener, that means reading message from sensors and sending them to 'out' channel.  
-B. Your task is to implement hydration messages processing - method RunProcessor in HydrationProcessor.
-C. Your task is to implement ph messages processing - method RunProcessor in PHProcessor.
+Tasks:
+A. Your task is to implement method Listen() in GenericListener, that means reading message from sensors and sending them to 'out' channel. \  
+B. Your task is to implement hydration messages processing - method RunProcessor in HydrationProcessor. \
+C. Your task is to implement ph messages processing - method RunProcessor in PHProcessor. \
 D. Your task is to implement health messages processing - method RunProcessor in HealthProcessor.
 
 *E. If you feel powerful enough, implement drones' state output to console, specifically their charge and position.
